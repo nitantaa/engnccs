@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    color: white;
+} 
+
+h1{
+    text-align: center;
+}
+
+.adver{
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 200px;
+    width: 30%;
+    color: darkgray;
+    position: absolute;
+    top: 50%;
+    right: 60%;
+    -webkit-transform: translateY(-75%);
+    -ms-transform: translateY(-75%);
+    transform: translateY(-75%);
+}
+
+.container {
+    margin-right: 50px;
+    position: absolute;
+    width: 48%;
+    padding: 12px;
+}
+.container_bottom {
+    margin-right: 50px;
+    position: absolute;
+    width: 48%;
+    padding: 12px;
+    left: 0%;
+}
+#tth{
+    top: 75%;
+}
+
+#right{
+    position: relative;
+    float: right;
+}
+
+.linker{
+    position: absolute;
+    right: 16px;
+    padding: 12px;
+    font-size: 1.65em;
+}
+
+.container a{
+    color: #F1F1F1;
+    text-decoration: underline;
+}
+
+.container a:hover{
+    text-decoration:double;
+}
+.container_bottom a:hover{
+    text-decoration: double;
+}
+
+img{
+    border-radius: 8px;
+    width: 100%;
+    height:auto;
+}
+
+.newsheading{
+    color: #F1F1F1;
+    font-size: xx-large;
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+    padding: 12px;
+    font-weight: bolder;
+}
+
+.newstype{
+    padding: 12px;
+    position: inherit;
+    top: 8px;
+    left: 16px;
+    font-size: 20px;
+    border-style: 1px solid;
+}
+
+#new{
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-color:black;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+#right:hover img{
+    opacity: 0.8;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+#right:hover .overlay {
+    opacity: 1;
+  }
+
+#right:hover .newsheading{
+    opacity:0;
+}
+.container_bottom:hover  img{
+    opacity: 0.8;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+.container_bottom:hover .overlay{
+    opacity:1;
+}
+.container_bottom:hover .newsheading{
+    opacity:0;
+}
+
+.container img{
+    border-radius: 12px;
+}
+.container_bottom img{
+    border-radius: 12px;
+}
+
+.header{
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+}
+
+.title{
+    font-size: x-large;
+    text-align: inherit;
+    padding: 8px;
+}
+
+.content{
+    text-align: center;
+    padding-left: 500px;
+    border: hidden;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    animation-name: hhj;
+    position: relative;
+    top: 0px ;
+    animation-iteration-count:infinite ;
+    animation-duration: 4s;
+    animation-delay: 0ms;
+}
+@keyframes hhj{
+    0%{
+        background: linear-gradient(to right, black, grey);
+    }
+    100%{background: linear-gradient(to left, black, grey) ;
+    }
+}
+
+li{
+    display: inline;
+    float: left;
+}
+
+li a{
+    font-size: medium;
+    display: block;
+    padding: 14px 22px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+li a:hover:not(.active)  {
+    background-color: rgb(41, 41, 41);
+}
+
+.active {
+    background-color: #04AA6D;
+}
+.hhd{
+    width: 50%; float: left; height: 50%;
+}
+.hhd:hover{
+    border: 5px solid black;
+}
+
+#left img{
+    width: 100%;
+    height: auto;
+    transition: 0.4s;
+}
+
+#left:hover img{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+#newpo{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 25%;
+    font-size: 3em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#newpoi{
+    text-decoration: none;
+    transition: 2s;
+}
+#newpoi:hover{
+    text-decoration: underline;
+    background: white;
+    color: black;
+    text-decoration-color: limegreen;
+}
+#adver2{
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 200px;
+    width: 30%;
+    height: 40%;
+    color: darkgray;
+    position: absolute;
+    top: 170%;
+    right: 60%;
+    -webkit-transform: translateY(-75%);
+    -ms-transform: translateY(-75%);
+    transform: translateY(-75%);
+}
+#topp{
+    border: none;
+    background: red;
+    height: 10%;
+    width: 5%;
+    bottom: 2%;
+    right: 0.5%;
+    position: fixed;
+    cursor: pointer;
+}
+#topp:hover{
+    background: gray;
+}
+#right1{
+top: 205%;
+}
